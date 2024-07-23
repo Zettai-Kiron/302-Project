@@ -53,7 +53,7 @@ body {
 #header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding:  20px 80px;
     background: #E3E6F3;
 }
@@ -62,16 +62,20 @@ body {
     width: 80px;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu{
+    flex: 1;
+    text-align: right;
 }
 
-#navbar li{
+/* #navbar {
+    display: inline-block;
+} */
+
+.menu #navbar li{
+    display: inline-block;
     list-style: none;
     padding: 0 20px;
-    /* position: relative; */
+    position: relative;
 }
 
 #navbar li a{
