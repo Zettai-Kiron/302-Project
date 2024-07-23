@@ -45,35 +45,9 @@ p {
     margin: 40px 0;
 }
 
-button.normal{
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: black;
-    background-color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-}
-
-button.white{
-    font-size: 13px;
-    font-weight: 600;
-    padding: 11px 18px;
-    color: #fff;
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid #fff;
-    outline: none;
-    transition: 0.2s;
-}
-
 body {
     width: 100%;
 }
-
 
 /* Header Start */
 #header {
@@ -82,12 +56,6 @@ body {
     justify-content: space-between;
     padding:  20px 80px;
     background: #E3E6F3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-    
 }
 
 #header .logo{
@@ -103,7 +71,7 @@ body {
 #navbar li{
     list-style: none;
     padding: 0 20px;
-    position: relative;
+    /* position: relative; */
 }
 
 #navbar li a{
@@ -157,22 +125,12 @@ body {
     padding-bottom: 15px;
 }
 
-
-
 #hero h1,
 #hero h2,
 #hero h4,
 #hero p {
     color: #000
 }
-
-/* #hero button{
-    background-image: url(images/Badge.jpg);
-    background-color: transparent;
-    color: #088178;
-    border: 0;
-    padding: 14px 80px 40px 65px ;
-} */
 
 #feature{
     display: flex;
@@ -388,8 +346,6 @@ footer .copyright{
 
 
 /* Shop Page */
-
-
 #page-header{
     background-image: url("Images/banner-3.jpg");
     width: 100%;
@@ -400,7 +356,6 @@ footer .copyright{
     text-align: center;
     flex-direction: column;
     padding: 14px;
-
 }
 
 #page-header h2,
@@ -410,7 +365,6 @@ footer .copyright{
 
 #pagination{
     text-align: center;
-
 }
 
 #pagination a{
@@ -433,7 +387,6 @@ footer .copyright{
     display: flex;
     margin-top: 20px;
 }
-
 
 #prodetails .single-pro-image{
     width: 40%;
