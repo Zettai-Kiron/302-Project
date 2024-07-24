@@ -31,39 +31,35 @@
     </section>
 
     <!-- Account Page -->
-        <div class="account-page">
-            <div class="container">
-                <div class="row">
-                    <!-- <div class="col-2">
-                        <img src="images/Bradley.jpg" alt="">
-                    </div> -->
-
-                    <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn">
-                                <span onclick="login()">LOGIN</span>
-                                <span onclick="register()">REGISTER</span>
-                                <hr id="Indicator">
-                            </div>
-
-                            <form id="LoginForm">
-                                <input type="text" placeholder="Username">
-                                <input type="password" placeholder="Password">
-                                <button type="submit" class="btn">Login</button>
-                                <a href="#">Forgot Password</a>
-                            </form>
-                            <form id="RegisterForm">
-                                <input type="text" placeholder="Username">
-                                <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Password">
-                                <button type="submit" class="btn">Login</button>
-                                <a href="#">Forgot Password</a>
-                            </form>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">LOGIN</span>
+                            <span onclick="register()">REGISTER</span>
+                            <hr id="Indicator">
                         </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
       <!-- Footer -->
       <footer class="section-p1">
@@ -76,16 +72,16 @@
             <div class="follow">
                 <h4>Follow Us</h4>
                 <div class="icon">
-                    <i class="ri-facebook-fill"></i>
-                    <i class="ri-snapchat-fill"></i>
-                    <i class="ri-instagram-fill"></i>
+                    <a href="#" class="facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="snapchat"><i class="ri-snapchat-fill"></i></a>
+                    <a href="#" class="instagram"><i class="ri-instagram-fill"></i></a>
                 </div>
             </div>
         </div>
 
         <div class="col">
             <h4>About</h4>
-            <a href="#">About us</a>
+            <a href="About.html">About us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
@@ -94,11 +90,11 @@
 
         <div class="col">
             <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+            <a href="Account.html">Sign In</a>
+            <a href="Cart.html">View Cart</a>
+            <a href="Account.html">My Wishlist</a>
+            <a href="Cart.html">Track My Order</a>
+            <a href="About.html">Help</a>
         </div>
 
         <div class="copyright">
@@ -106,6 +102,25 @@
         </div>
 
        </footer>
+
+
+       <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegisterForm = document.getElementById("RegisterForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function register(){
+                RegisterForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+
+            function login(){
+                RegisterForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+       </script>
 
        <script src="script.js"></script>
 </body>
