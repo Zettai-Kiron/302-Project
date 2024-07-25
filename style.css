@@ -49,6 +49,19 @@ body {
     width: 100%;
 }
 
+button{
+    background-color: #088178;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: #000;
+}
+
 /* Header Start */
 #header {
     display: flex;
@@ -66,10 +79,6 @@ body {
     flex: 1;
     text-align: right;
 }
-
-/* #navbar {
-    display: inline-block;
-} */
 
 .menu #navbar li{
     display: inline-block;
@@ -111,7 +120,7 @@ body {
     display: none;
 }
 
-/* Home Page */
+/* Hero Page */
 #hero {
     background-image: url(Images/slide-1.jpg);
     height: 90vh;
@@ -135,6 +144,7 @@ body {
 #hero p {
     color: #000
 }
+
 
 #feature{
     display: flex;
@@ -438,11 +448,6 @@ footer .copyright{
     margin-right: 10px;
 }
 
-#prodetails .single-pro-details button{
-    background-color: #088178;
-    color: #fff;
-}
-
 #prodetails .single-pro-details span{
     line-height: 25px;
 }
@@ -687,6 +692,7 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
+
 
 /* Media Query */
 @media (max-width: 799px) {
