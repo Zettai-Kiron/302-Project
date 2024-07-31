@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Remix icons -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
+
+        <div class="menu">
+            <ul id="navbar">
+                <li><a class="active" href="Index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li id="lg-bag"><a href="Cart.html"><i class="ri-shopping-bag-line"></i></a></li>
+                <a href="#" id="close"><i class="ri-arrow-right-fill"></i></a>
+            </ul>
+        </div>
+
+        <div class="mobile">
+            <i id="bar" class="ri-menu-line"></i>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <div class="contact-container">
+        <form action="" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your message" class="contact-inputs" id="" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+            <img src="/Images/insta-2.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
